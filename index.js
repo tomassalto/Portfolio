@@ -61,6 +61,16 @@ function intersectionHandler(entry) {
 //   });
 // }
 
+function copyToClipBoard() {
+
+  var content = document.getElementById('myInput');
+  
+  content.select();
+  document.execCommand('copy');
+
+  alert("Copied!");
+}
+
 ScrollReveal().reveal(".navbar", { delay: 250 });
 ScrollReveal().reveal(".home__profile", { delay: 350 });
 ScrollReveal().reveal(".home__title--primary", { delay: 350 });
